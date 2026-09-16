@@ -73,15 +73,15 @@ function avaliarResposta(){
 
     const texto = resposta.toLowerCase();
 
-    if( texto.includes("criar")||
-        texto.includes("desenvolver")||
-        texto.includes("elaborar") ){
+    if( texto.include("criar")||
+        texto.include("desenvolver")||
+        texto.include("elaborar") ){
         pontos +=30;
     }
 
-    if( texto.includes("pesquisa")||
-        texto.includes("estudo")||
-        texto.includes("projeto") ){
+    if( texto.include("pesquisa")||
+        texto.include("estudo")||
+        texto.include("projeto") ){
         pontos +=30;
     }
 
@@ -123,7 +123,7 @@ ${pontos >= 70
 }
 
     <button onclick="location.reload()">
-        Enviar a resposta.
+        Novo Desafio.
     </button>
    `
 }
