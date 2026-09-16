@@ -52,7 +52,7 @@ function avaliarResposta(){
     //Criar as constantes que preciso
     const nome = document.getElementById("nome").value;
     const resposta = document.getElementById("resposta").value;
-    const textoDesafio = document.querySelector("# resultado h3").innerText;
+    const textoDesafio = document.querySelector("#resultado h3").innerText;
 
 
     if (resposta.trim() === "") {
@@ -73,15 +73,15 @@ function avaliarResposta(){
 
     const texto = resposta.toLowerCase();
 
-    if( texto.include("criar")||
-        texto.include("desenvolver")||
-        texto.include("elaborar") ){
+    if( texto.includes("criar")||
+        texto.includes("desenvolver")||
+        texto.includes("elaborar") ){
         pontos +=30;
     }
 
-    if( texto.include("pesquisa")||
-        texto.include("estudo")||
-        texto.include("projeto") ){
+    if( texto.includes("pesquisa")||
+        texto.includes("estudo")||
+        texto.includes("projeto") ){
         pontos +=30;
     }
 
@@ -118,12 +118,12 @@ function avaliarResposta(){
 
 ${pontos >= 70
 ? "Parabéns, você conseguiu uma ótima pontuação, continue assim!"
-: "Contunue pesquisando e desenvolvendo novos projetos, você consegurá na próxima!"
+: "Contiunue pesquisando e desenvolvendo novos projetos, você conseguirá na próxima!"
 
 }
 
     <button onclick="location.reload()">
-        Novo Desafio.
+        Novo desafio!
     </button>
    `
 }
